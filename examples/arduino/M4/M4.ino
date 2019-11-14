@@ -144,6 +144,7 @@ void checkCrypto() {
 void setup()
 {
   Serial.begin(115200); // Begin your Serial Connection. This allows you to monitor your boards output.
+  while (!Serial);
 
   checkCrypto(); // Begin Crypto example usage.
 };

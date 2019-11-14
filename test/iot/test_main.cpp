@@ -18,6 +18,7 @@ void setDummyTime() {
 
 void setup() {
   Serial.begin(115200);
+  while (!Serial);
 
   optimize_for_testing();
 
